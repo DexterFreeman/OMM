@@ -1,0 +1,13 @@
+<h1>Online Meeting Manager </h1>
+<ul>
+{% for meeting in object_list %}
+Meeting code: {{meeting.code }} Name: {{meeting.topic_of_meeting }}  Start Time:{{meeting.start_time }} Duration: {{meeting.duration_time }}mins <br><br>
+
+{% empty %}
+    <li>No meetings scheduled yet.</li>
+{% endfor %}
+</ul>
+<form action="http://127.0.0.1:8000/">
+    <input type="submit" value="Go to home page" />
+</form>
+
