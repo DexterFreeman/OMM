@@ -7,8 +7,9 @@ Each meeting is added to a google calendar as well.
 
 ## Tech Stack:
 It is a CRUD application, with a MVC design mattern. 
-The frontend was built using React and class based components. With the UI being built using of Material UI components. 
+The frontend was built using React and class based components. With the UI being built using Material UI components. 
 The backend uses Python and a REST API to take in the data from the frontend in JSON and returning a HTTP code depending on the data passed in.
+Web-pack and Babel are used for bandling and converting both the front-end code and backend code for the framework. 
 
 ## Dissertaition: 
 As part of this project, I wrote a dissertation which includes, the analysis, testing, implementiation and conclusion of this project. 
