@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import { TextField, Button, Grid, Typography } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import {MeetingRoom} from "@material-ui/icons"
-
+import NavbarComponent from "./navigation/NavbarComponent";
 export default class MeetingJoinPage extends Component{
     constructor(props){
         super(props); 
@@ -55,6 +55,7 @@ export default class MeetingJoinPage extends Component{
     render(){
         return (
             <Grid container spacing={1}>
+                <NavbarComponent />
                 <Grid item xs={12} align="center">
                     <Typography variant="h4" component="h4">
                         Join a Meeting

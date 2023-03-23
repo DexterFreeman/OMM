@@ -4,7 +4,7 @@ import { Grid, List, Typography, Button, ListItem, CardActions, AppBar, CardCont
 import {Computer} from "@material-ui/icons"
 import {Link} from "react-router-dom"
 import CreateMeetingPage from './CreateMeetingPage';
-
+import NavbarComponent from './navigation/NavbarComponent';
 export default class ViewMeetings extends Component {
     constructor(props) {
         super(props);
@@ -53,6 +53,7 @@ export default class ViewMeetings extends Component {
     render(){
         return (
             <Grid container spacing={1} direction="column" alignItems="center" justifyContent="center" style={{ minHeight: '100vh'}}>
+                <NavbarComponent />
                 <Grid item xs={12} align="center">
                     <Typography variant='h3' component='h3'>
                         Meetings List

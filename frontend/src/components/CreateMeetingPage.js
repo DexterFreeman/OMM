@@ -5,7 +5,7 @@ import { Collapse } from "@material-ui/core"
 import Alert from "@material-ui/lab/Alert"
 import { CreateNewFolder, RepeatOneSharp, SystemUpdate } from "@material-ui/icons"
 import { withStyles } from "@material-ui/core/styles";
-
+import NavbarComponent from "./navigation/NavbarComponent";
 
 export default class CreateMeetingPage extends Component{
     
@@ -155,6 +155,7 @@ export default class CreateMeetingPage extends Component{
         const title = this.props.update ? "Update Meeting" : "Create A Meeting";
         return ( 
             <Grid container spacing={1} >
+                <NavbarComponent />
                 <Grid item xs={12} align="center">
                     <Collapse in={this.state.errorMsg != "" || this.state.successMsg != ""}>
                         {this.state.successMsg != "" ? (<Alert severity="success" onClose={() => {this.setState({successMsg: "",})}}>{this.state.successMsg}</Alert>

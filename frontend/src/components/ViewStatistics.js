@@ -2,6 +2,7 @@ import { DataUsage, RepeatOneSharp, ThreeSixty } from '@material-ui/icons';
 import React, { Component } from 'react';
 import { Grid, List, Typography, Button } from "@material-ui/core"
 import {Link} from "react-router-dom"
+import NavbarComponent from './navigation/NavbarComponent';
 export default class ViewStatistics extends Component {
     constructor(props) {
         super(props);
@@ -29,6 +30,7 @@ export default class ViewStatistics extends Component {
     render(){
         return (
             <Grid container spacing={3} justify="flex-end">
+                <NavbarComponent />
                 <Grid item xs={12} align="center">
                     <Typography variant='h3' component='h3'>
                         Statistics

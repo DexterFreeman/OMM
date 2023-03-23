@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { Grid, Typography, Button } from "@material-ui/core"
 import {Link} from "react-router-dom"
 import CreateMeetingPage from './CreateMeetingPage';
-
+import NavbarComponent from './navigation/NavbarComponent';
 
 export default class Meeting extends Component {
     constructor(props) {
@@ -149,6 +149,7 @@ export default class Meeting extends Component {
         }
         return (
             <div className='normal'>
+                <NavbarComponent />
             <Grid container spacing={1}>
                 <Grid item xs={12} align="center">
                     <Typography variant="h4" component="h4">

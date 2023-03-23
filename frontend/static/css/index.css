@@ -53,21 +53,19 @@ html, body{
 
 .home-page__main-content{
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    align-items: center;
     height: 80vh;
     width: 85vw;
     background-color: #3b3636;
-    gap: 20px;
+    text-align: left;
+    padding: 50px;
 }
 
 
 .home-btn{
-    height: 120px;
-    width: 80vw;
+    height: 80px;
+    width: 40vw;
     font-size: 40px;
- 
     background-color: #cb9569;
 }
 

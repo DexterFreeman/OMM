@@ -75,7 +75,8 @@ export default class HomePage extends Component {
       <div className="home-page">
         <NavbarComponent />
         <div className="home-page__main-content">
- 
+            <h1>Welcome to Online Meeting Manager!</h1> 
+            <p>Online Meeting Manager is a website that helps users create and manage their Zoom meetings. It automatically adds meetings to their Google Calendar and simplifies the process of joining meetings. It's perfect for anyone who attends or hosts online meetings regularly.</p>
             <Link to={"/join"} ><button className="home-btn">Join a Meeting</button></Link>
             <Link to={"/create"} ><button className="home-btn">Create a Meeting</button></Link>
 
